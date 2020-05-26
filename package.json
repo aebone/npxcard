@@ -1,0 +1,43 @@
+{
+  "name": "alinebone",
+  "version": "1.0.0",
+  "description": "A personal card for Aline Ebone (@alinebone)",
+  "main": "/bin/card.js",
+  "bin": {
+    "alinebone": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinebone/npxcard.git"
+  },
+  "homepage": "https://alinebone.github.io",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Aline Ebone",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "prettier": "^1.16.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.1",
+    "standard": "^12.0.1"
+  }
+}
